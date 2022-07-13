@@ -71,6 +71,7 @@ int main() {
 				return 0;
 			}
 			rep(i ,0 ,n) { if (i == stock[0] or i == stock[1]) continue;
+				if (distance(c[i], cb) <= c[i][2] + cb[2]) {
 				tmp[0] = c[i][0];
 				tmp[1] = c[i][1];
 				if (distance(tmp, b) < d) {
