@@ -11,6 +11,6 @@ int main() {
 	vector<int> n(3);
 	cin >> n[0] >> n[1] >> n[2];
 	sort(n.begin(), n.end());
-	if (n[0] == 5 && n[1] == 5 && n[2] == 7) cout << "Yes\n";
-	else cout << "No\n";
+	if (n[0] == 5 && n[1] == 5 && n[2] == 7) cout << "YES\n";
+	else cout << "NO\n";
 }
