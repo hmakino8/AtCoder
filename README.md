@@ -1,2 +1,2 @@
 # AtCoder
-Code collection AC with Atcoder
+Code collection AC with AtCoder
