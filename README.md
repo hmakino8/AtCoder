@@ -1,2 +1,2 @@
 # AtCoder
-AtCoderに提出したコード集
+Code collection AC with Atcoder
