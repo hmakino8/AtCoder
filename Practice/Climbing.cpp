@@ -12,4 +12,15 @@
 using namespace std;
 
 int main() {
+	int n;
+	cin >> n;
+	vector<int> h(n);
+	rep(i, n) cin >> h[i];
+	int tmp = h[0];
+	int i = 1;
+	for (; i < n; i++) {
+		if (tmp >= h[i]) break ;
+		tmp = h[i];
+	}
+	cout << h[i-1] << endl;
 }

@@ -8,5 +8,8 @@
 using namespace std;
 
 int main() {
-	
+	vector<int> a(9);
+	rep(i, 10) cin >> a[i];
+
+	cout << a[a[a[0]]] << endl;
 }

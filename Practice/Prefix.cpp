@@ -12,4 +12,17 @@
 using namespace std;
 
 int main() {
+	string s, t;
+	cin >> s >> t;
+	if (t.size() < s.size()) {
+		cout << "No" << endl; return 0;}
+	if (s == t) {
+		cout << "Yes" << endl; return 0;
+	}
+	rep(i, s.size()) {
+		if (s[i] != t[i]) {
+			cout << "No" << endl; return 0;
+		}
+	}
+	cout << "Yes" << endl; return 0;
 }

@@ -17,7 +17,7 @@
  *
  * 0<=i<n,0<=j<n,0<=k<n (j=i+1, k=j+1)の時,
  * adj[i][j]=true かつ adj[j][k]=true かつ adj[k][i]=trueを満たす
- * 組み合わせとなる。
+ * 組み合わせを探す。最大O(N*N-1*N-2)
  */
 
 //#include <bits/stdc++.h>
