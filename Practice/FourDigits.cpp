@@ -11,12 +11,19 @@
 #define rrep(i, a, b) for(int i = a; i >= b; i--)
 using namespace std;
 
-int f(int x) {
-	return (x*x + 2*x + 3);
+int main() {
+	int n;
+	cin >> n;
+	printf("%04d\n", n);
 }
 
-int main() {
-	int t;
-	cin >> t;
-	cout << f(f(f(t)+t) + f(f(t))) << endl;
-}
+//int main() {
+//	int n;
+//	cin >> n;
+//	string s = to_string(n);
+//	int len = s.size();
+//
+//	string join;
+//	rep(i, 4-len) join += "0";
+//	cout << join + s << endl;
+//}

@@ -11,12 +11,15 @@
 #define rrep(i, a, b) for(int i = a; i >= b; i--)
 using namespace std;
 
-int f(int x) {
-	return (x*x + 2*x + 3);
-}
-
 int main() {
-	int t;
-	cin >> t;
-	cout << f(f(f(t)+t) + f(f(t))) << endl;
+	int n,k,x,y;
+	cin>>n>>k>>x>>y;
+
+	int sum = 0;
+	rep2(i, 1, n+1) {
+		if (i <= k) sum += x;
+		else sum += y;
+	}
+	cout << sum << endl;
+	return 0;
 }

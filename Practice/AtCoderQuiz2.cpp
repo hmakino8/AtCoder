@@ -11,12 +11,13 @@
 #define rrep(i, a, b) for(int i = a; i >= b; i--)
 using namespace std;
 
-int f(int x) {
-	return (x*x + 2*x + 3);
-}
-
 int main() {
-	int t;
-	cin >> t;
-	cout << f(f(f(t)+t) + f(f(t))) << endl;
+	int x;
+	cin >> x;
+
+	if (x >= 90) cout << "expert" << endl;
+	else if (x >= 70) cout << 90 - x << endl;
+	else if (x >= 40) cout << 70 - x << endl;
+	else cout << 40 - x << endl;
+	return 0;
 }

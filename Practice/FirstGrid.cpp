@@ -11,12 +11,11 @@
 #define rrep(i, a, b) for(int i = a; i >= b; i--)
 using namespace std;
 
-int f(int x) {
-	return (x*x + 2*x + 3);
-}
-
 int main() {
-	int t;
-	cin >> t;
-	cout << f(f(f(t)+t) + f(f(t))) << endl;
+	string s1, s2;
+	cin >> s1 >> s2;
+	if (s1 == ".#" && s2 == "#.") cout << "No" << endl;
+	else if (s2 == ".#" && s1 == "#.") cout << "No" << endl;
+	else cout << "Yes" << endl;
+	return 0;
 }

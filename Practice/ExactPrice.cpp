@@ -11,12 +11,20 @@
 #define rrep(i, a, b) for(int i = a; i >= b; i--)
 using namespace std;
 
-int f(int x) {
-	return (x*x + 2*x + 3);
+int main() {
+	int x;
+	cin >> x;
+
+	if (x == 0 || x%100 != 0) cout << "No" << endl;
+	else cout << "Yes" << endl;
+	return 0;
 }
 
-int main() {
-	int t;
-	cin >> t;
-	cout << f(f(f(t)+t) + f(f(t))) << endl;
-}
+//int main() {
+//	int x;
+//	cin >> x;
+//
+//	if (x/100 != 0 && x%100 == 0) cout << "Yes" << endl;
+//	else cout << "No" << endl;
+//	return 0;
+//}

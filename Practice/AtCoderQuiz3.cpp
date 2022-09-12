@@ -11,12 +11,10 @@
 #define rrep(i, a, b) for(int i = a; i >= b; i--)
 using namespace std;
 
-int f(int x) {
-	return (x*x + 2*x + 3);
-}
-
 int main() {
-	int t;
-	cin >> t;
-	cout << f(f(f(t)+t) + f(f(t))) << endl;
+	int n;
+	cin >> n;
+	if (n >= 42) n++;
+	if (n >= 10) cout << "AGC0" << to_string(n) << endl;
+	else cout << "AGC00" << to_string(n) << endl;
 }

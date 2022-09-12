@@ -11,12 +11,11 @@
 #define rrep(i, a, b) for(int i = a; i >= b; i--)
 using namespace std;
 
-int f(int x) {
-	return (x*x + 2*x + 3);
-}
-
 int main() {
-	int t;
-	cin >> t;
-	cout << f(f(f(t)+t) + f(f(t))) << endl;
+	string s;
+	cin >> s;
+
+	if (s[s.size()-1] == 'r') cout << "er" << endl;
+	else cout << "ist" << endl;
+	return 0;
 }

@@ -11,12 +11,20 @@
 #define rrep(i, a, b) for(int i = a; i >= b; i--)
 using namespace std;
 
-int f(int x) {
-	return (x*x + 2*x + 3);
+int main() {
+	string s;
+	cin >> s;
+
+	s[3] = '8';
+	cout << s << endl;
+	return 0;
 }
 
-int main() {
-	int t;
-	cin >> t;
-	cout << f(f(f(t)+t) + f(f(t))) << endl;
-}
+//int main() {
+//	string s;
+//	cin >> s;
+//	cout << "2018";
+//	rep2(i, 4, s.size()) cout << s[i];
+//	cout << endl;
+//	return 0;
+//}
