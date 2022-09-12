@@ -1,5 +1,7 @@
 #!/bin/bash
 
+trap 'rm a.out' EXIT
+
 if [ ! -e ./$1 ]; then
 	echo " file '$1' is NOT exists."
 else
