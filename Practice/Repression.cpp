@@ -12,18 +12,15 @@
 using namespace std;
 
 int main() {
-	int n = 0, even = 0, mini = 1000000001;
-	cin >> n;
-
-	rep(i, n) {
-		cin >> even;
-		int cnt = 0;
-		while (even != 0 && even%2 == 0) {
-			even /= 2;
-			cnt++;
-		}
-		mini = min(mini, cnt);
-	}
-	cout << mini << endl;
-	return 0;
+	int a,b,c; cin>> a>> b>> c;
+	cout << a+b+c - min({a,b,c}) << endl;
 }
+
+//int main() {
+//	vector<int> num(3);
+//	rep(i, 3) cin>>num[i];
+//	sort(num.begin(), num.end());
+//	cout << num[1] + num[2] << endl;
+//	return 0;
+//}
+//

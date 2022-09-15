@@ -12,18 +12,11 @@
 using namespace std;
 
 int main() {
-	int n = 0, even = 0, mini = 1000000001;
+	int n;
 	cin >> n;
-
-	rep(i, n) {
-		cin >> even;
-		int cnt = 0;
-		while (even != 0 && even%2 == 0) {
-			even /= 2;
-			cnt++;
-		}
-		mini = min(mini, cnt);
-	}
-	cout << mini << endl;
+	n = (int)(n * 1.08);
+	if (n < 206) cout << "Yay!" << endl;
+	else if (n == 206) cout << "so-so" << endl;
+	else cout << ":(" << endl;
 	return 0;
 }

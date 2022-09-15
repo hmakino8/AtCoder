@@ -12,18 +12,8 @@
 using namespace std;
 
 int main() {
-	int n = 0, even = 0, mini = 1000000001;
-	cin >> n;
-
-	rep(i, n) {
-		cin >> even;
-		int cnt = 0;
-		while (even != 0 && even%2 == 0) {
-			even /= 2;
-			cnt++;
-		}
-		mini = min(mini, cnt);
-	}
-	cout << mini << endl;
+	int a, b, c;
+	cin >> a >> b >> c;
+	cout << 21 - (a + b + c) << endl;
 	return 0;
 }

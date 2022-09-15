@@ -12,18 +12,10 @@
 using namespace std;
 
 int main() {
-	int n = 0, even = 0, mini = 1000000001;
-	cin >> n;
-
-	rep(i, n) {
-		cin >> even;
-		int cnt = 0;
-		while (even != 0 && even%2 == 0) {
-			even /= 2;
-			cnt++;
-		}
-		mini = min(mini, cnt);
-	}
-	cout << mini << endl;
+	vector<int> an(3);
+	rep(i, 3) cin >> an[i];
+	sort(an.begin(), an.end());
+	if (an[1] - an[0] == an[2] - an[1]) cout << "Yes" << endl;
+	else cout << "No" << endl;
 	return 0;
 }
