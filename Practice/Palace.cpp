@@ -1,0 +1,27 @@
+//#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <map>
+#include <set>
+#include <stdio.h>
+#define rep(i, b) for(int i = 0; i < b; i++)
+#define rep2(i, a, b) for(int i = a; i < b; i++)
+#define rrep(i, a, b) for(int i = a; i >= b; i--)
+using namespace std;
+
+int main() {
+	int n, tmp, res;
+	double a, t, mini = 1000000;
+	cin >> n >> t >> a;
+	rep2(i, 1, n+1) {
+		cin >> tmp;
+		double diff = abs(a - (t - double(tmp * 0.006)));
+		if (mini > diff) {
+			res = i;
+			mini = diff;
+		}
+	}
+	cout << res << endl;
+}
