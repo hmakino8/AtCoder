@@ -20,7 +20,7 @@ int main() {
 		cnt = 4;
 	}
 	else {
-		cnt = 3
+		cnt = 3;
 	}
 	return cnt;
 }
