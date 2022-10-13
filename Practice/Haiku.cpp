@@ -11,4 +11,12 @@
 using namespace std;
 
 int main() {
+	string s;
+	cin >> s;
+	rep(i, 0, s.size()) {
+		if (s[i] == ',') cout << ' ';
+		else cout << s[i];
+	}
+	cout << endl;
+	return 0;
 }
