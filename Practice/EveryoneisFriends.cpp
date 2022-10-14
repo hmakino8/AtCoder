@@ -13,20 +13,23 @@ using namespace std;
 int main() {
 	int n, m;
 	cin >> n >> m;
-	map<int, int> mp;
+	vector<vector<bool> > table(n, vector<bool>(n));
 
 	rep(i, 0, m) {
-		int k = 0;
+		int k;
 		cin >> k;
-		rep(j, 0, k) {
-			int tmp = 0;
-			cin >> tmp;
-			mp[tmp]++;
+		vector<int> tmp(k);
+		rep(j, 0, k) cin >> tmp[j], tmp[j]--;
+		rep(l, 0, k)rep(m, 0, k) {
+			table[tmp[l]][tmp[m]] = true;
 		}
 	}
-	bool ok = true;
-	rep(i, 1, n+1) if (mp[i] != 2) ok = false;
-	if (ok) cout << "Yes" << endl;
-	else cout << "No" << endl;
+	rep(i, 0, n)rep(j, 0, n) {
+		if (!table[i][j]) {
+			cout << "No" << endl;
+			return 0;
+		}
+	}
+	cout << "Yes" << endl;
 	return 0;
 }
