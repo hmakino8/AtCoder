@@ -11,10 +11,11 @@
 using namespace std;
 
 int main() {
-	vector<int> v(3);
-	rep(i, 0, 3) cin >> v[i];
+	string s, s2;
+	cin >> s >> s2;
 
-	sort(v.begin(), v.end());
-	cout << v[0]+v[1] << endl;
+	int a = s[0]+s[1]+s[2];
+	int b = s2[0]+s2[1]+s2[2];
+	cout << (a > b ? a-'0'*3 : b-'0'*3) << endl;
 	return 0;
 }

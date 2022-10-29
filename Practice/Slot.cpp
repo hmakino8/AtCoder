@@ -11,10 +11,9 @@
 using namespace std;
 
 int main() {
-	vector<int> v(3);
-	rep(i, 0, 3) cin >> v[i];
-
-	sort(v.begin(), v.end());
-	cout << v[0]+v[1] << endl;
+	string s;
+	cin >> s;
+	if (s[0] == s[1] && s[1] == s[2] && s[2] == s[0]) cout << "Won" << endl;
+	else cout << "Lost" << endl;
 	return 0;
 }

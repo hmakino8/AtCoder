@@ -10,11 +10,14 @@
 #define rrep(i, a, b) for(int i = a; i >= b; i--)
 using namespace std;
 
-int main() {
-	vector<int> v(3);
-	rep(i, 0, 3) cin >> v[i];
+int f(int k) {
+	if (k == 0) return 1;
+	return k*f(k-1);
+}
 
-	sort(v.begin(), v.end());
-	cout << v[0]+v[1] << endl;
+int main() {
+	int n;
+	cin >> n;
+	cout << f(n) << endl;
 	return 0;
 }

@@ -17,6 +17,8 @@ int main() {
 	if ((a == 'H' && b == 'H') || (a == 'D' && b == 'D')) {
 		cout << 'H' << endl;
 	}
-	if (a == 'H' && b == 'D') cout << 'D' << endl;
-	if (a == 'D' && b == 'H') cout << 'D' << endl;
+	if ((a == 'H' && b == 'D') || (a == 'D' && b == 'H')) {
+		cout << 'D' << endl;
+	}
+	return 0;
 }

@@ -11,10 +11,20 @@
 using namespace std;
 
 int main() {
-	vector<int> v(3);
-	rep(i, 0, 3) cin >> v[i];
+	long long x;
+	int k;
+	cin >> x >> k;
 
-	sort(v.begin(), v.end());
-	cout << v[0]+v[1] << endl;
+	rep(i,0,k) {
+		long long mul = 1;
+		rep(j,1,i+1) mul *= 10;
+
+		int tmp = (x%mul)%(mul*10);
+		cout << tmp << endl;
+		if (tmp>=5) x += mul*10;
+		x /= mul*10;
+		x *= mul*10;
+	}
+	cout << x << endl;
 	return 0;
 }

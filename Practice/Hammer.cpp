@@ -30,7 +30,7 @@ int main() {
 	cin>>x>>y>>z;
 
 	if (f(0,x,y)) {
-		if (f(0,y,z)) cout << -1 << endl;
+		if (f(0,z,y)) cout << -1 << endl;
 		else cout << abs(z) + abs(z-x) << endl;
 	}
 	else cout << abs(x) << endl;

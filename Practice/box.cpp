@@ -11,10 +11,6 @@
 using namespace std;
 
 int main() {
-	vector<int> v(3);
-	rep(i, 0, 3) cin >> v[i];
-
-	sort(v.begin(), v.end());
-	cout << v[0]+v[1] << endl;
-	return 0;
+	int n,a,b;
+	cin>>n>>a>>b;
 }
