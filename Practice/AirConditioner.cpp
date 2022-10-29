@@ -11,8 +11,9 @@
 using namespace std;
 
 int main() {
-	int n,a,b;
-	cin>>n>>a>>b;
-	cout << n-a+b << endl;
+	int x;
+	cin>>x;
+	if (x>=30) cout << "Yes" << endl;
+	else cout << "No" << endl;
 	return 0;
 }

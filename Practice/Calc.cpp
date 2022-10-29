@@ -11,8 +11,8 @@
 using namespace std;
 
 int main() {
-	int n,a,b;
-	cin>>n>>a>>b;
-	cout << n-a+b << endl;
+	int a;
+	cin>>a;
+	cout << a+pow(a,2)+pow(a,3) << endl;
 	return 0;
 }

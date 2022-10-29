@@ -11,8 +11,8 @@
 using namespace std;
 
 int main() {
-	int n,a,b;
-	cin>>n>>a>>b;
-	cout << n-a+b << endl;
+	int n,x,t;
+	cin>>n>>x>>t;
+	cout << (n/x+(n%x>0))*t << endl;
 	return 0;
 }

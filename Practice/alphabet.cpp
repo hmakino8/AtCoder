@@ -11,8 +11,9 @@
 using namespace std;
 
 int main() {
-	int n,a,b;
-	cin>>n>>a>>b;
-	cout << n-a+b << endl;
+	char alpha;
+	cin>>alpha;
+	if (alpha-int('a') < 0) cout << 'A' << endl;
+	else cout << 'a' << endl;
 	return 0;
 }

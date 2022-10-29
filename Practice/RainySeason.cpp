@@ -11,8 +11,11 @@
 using namespace std;
 
 int main() {
-	int n,a,b;
-	cin>>n>>a>>b;
-	cout << n-a+b << endl;
+	string s;
+	cin>>s;
+	if (s == "SSS") cout << 0 << endl;
+	else if (s == "SRR" || s == "RRS") cout << 2 << endl;
+	else if (s == "RRR") cout << 3 << endl;
+	else cout << 1 << endl;
 	return 0;
 }

@@ -11,8 +11,13 @@
 using namespace std;
 
 int main() {
-	int n,a,b;
-	cin>>n>>a>>b;
-	cout << n-a+b << endl;
+	int res;
+
+	rep(i,0,5) {
+		int tmp;
+		cin >> tmp;
+		if (!tmp) res = i+1;
+	}
+	cout << res << endl;
 	return 0;
 }

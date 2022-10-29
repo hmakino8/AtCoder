@@ -11,8 +11,8 @@
 using namespace std;
 
 int main() {
-	int n,a,b;
-	cin>>n>>a>>b;
-	cout << n-a+b << endl;
+	float a,b;
+	cin>>a>>b;
+	printf("%0.3f", b/a);
 	return 0;
 }
