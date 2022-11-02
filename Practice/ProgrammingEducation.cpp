@@ -1,0 +1,22 @@
+//#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <map>
+#include <set>
+#include <stdio.h>
+#define rep(i, a, b) for(int i = a; i < b; i++)
+#define rrep(i, a, b) for(int i = a; i >= b; i--)
+using namespace std;
+
+int main() {
+	int n,a,b;
+	cin>>n;
+	if (n == 1) cout << "Hello World" << endl;
+	else {
+		cin>>a>>b;
+		cout << a+b << endl;
+	}
+	return 0;
+}
