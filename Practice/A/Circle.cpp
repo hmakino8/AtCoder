@@ -6,12 +6,13 @@
 #include <map>
 #include <set>
 #include <stdio.h>
-#define rep(i, a, b) for(int i = a; i < b; i++)
-#define rrep(i, a, b) for(int i = a; i >= b; i--)
+#define rep(i, a, b) for (int i = a; i < b; i++)
+#define rrep(i, a, b) for (int i = a; i >= b; i--)
 using namespace std;
 
-int main() {
+int main()
+{
 	int r;
-	cin>>r;
-	cout << r*r << endl;
+	cin >> r;
+	cout << r * r << endl;
 }

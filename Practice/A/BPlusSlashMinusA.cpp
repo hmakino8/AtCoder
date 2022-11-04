@@ -12,8 +12,13 @@ using namespace std;
 
 int main()
 {
-	float a, b;
+	int a, b;
 	cin >> a >> b;
-	printf("%0.3f", b / a);
+	if (a == 1 && b == 1)
+		cout << 2 << endl;
+	else if (b / a && !(b % a))
+		cout << a + b << endl;
+	else
+		cout << b - a << endl;
 	return 0;
 }
